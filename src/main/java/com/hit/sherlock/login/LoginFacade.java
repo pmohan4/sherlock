@@ -8,6 +8,16 @@ public class LoginFacade {
 
     @RequestMapping("/")
     public String login(){
-        return "login";
+        return "index";
+    }
+
+    @RequestMapping("/productOption")
+    public String productOption(){
+        return "catalog/productOption";
+    }
+
+    @RequestMapping("/productOption/detail")
+    public String productOptionDetail(){
+        return "catalog/productOptionDetail";
     }
 }

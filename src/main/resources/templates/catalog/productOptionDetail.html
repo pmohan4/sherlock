@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="index">
+<head>
+    <title>Prodcut Option</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Product Option > Shirt Color
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <form role="form">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input class="form-control" placeholder=""/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Type</label>
+                                                <input class="form-control" placeholder=""/>
+                                            </div>
+                                            <button type="submit" class="btn btn-default">Submit Button</button>
+                                            <button type="reset" class="btn btn-default">Reset Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="panel-heading">
+                                                Option Values
+                                                <button type="submit" class="btn btn-default">Add</button>
+                                                <button type="submit" class="btn btn-default">Edit</button>
+                                                <button type="submit" class="btn btn-default">Delete</button>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <table width="100%"
+                                                       class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline"
+                                                       id="dataTables-example" role="grid"
+                                                       aria-describedby="dataTables-example_info"
+                                                       style="width: 100%;">
+                                                    <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_asc" tabindex="0"
+                                                            rowspan="1" colspan="1" aria-sort="ascending"
+                                                            style="width: 171px;">Attribute Value
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="dataTables-example"
+                                                            rowspan="1"
+                                                            colspan="1"
+                                                            style="width: 207px;">Price Adjustment
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="dataTables-example"
+                                                            rowspan="1"
+                                                            colspan="1"
+                                                            style="width: 188px;">Display Order
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gradeA odd" role="row">
+                                                        <td class="sorting_1">Black</td>
+                                                        <td>0.00</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-lg-6 (nested) -->
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Details
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label>Attribute Name</label>
+                                                <input class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Display Order</label>
+                                                <input class="form-control" placeholder=""/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Use In SKU Generation</label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optionsRadiosInline"
+                                                           id="optionsRadiosInline1"
+                                                           value="option1" checked=""/>Yes
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optionsRadiosInline"
+                                                           id="optionsRadiosInline2"
+                                                           value="option2"/>No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Validation
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label>Required</label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optionsRadiosInline"
+                                                           id="optionsRadiosInline3"
+                                                           value="option1" checked=""/>Yes
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optionsRadiosInline"
+                                                           id="optionsRadiosInline4"
+                                                           value="option2"/>No
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Validation Strategy</label>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1"
+                                                               value="option1" checked=""/>None
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios2"
+                                                               value="option2"/>No Value Selected
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios3"
+                                                               value="option3"/>Validate on Add Item
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios4"
+                                                               value="option3"/>Validate on Submit
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+</section>
+</body>
+</html>
